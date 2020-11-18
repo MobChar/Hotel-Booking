@@ -1,7 +1,6 @@
 package HotelBooking.backend.bussiness;
 
 import java.sql.Date;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -12,7 +11,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.security.access.method.MapBasedMethodSecurityMetadataSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -21,7 +19,6 @@ import HotelBooking.backend.bussiness.DTO.EditHotelDTO;
 import HotelBooking.backend.bussiness.DTO.EditRoomDTO;
 import HotelBooking.backend.bussiness.DTO.NewHotelDTO;
 import HotelBooking.backend.bussiness.DTO.NewRoomDTO;
-import HotelBooking.backend.bussiness.DTO.SingleBookingDTO;
 import HotelBooking.backend.bussiness.DTO.SuggestHotelDTO;
 import HotelBooking.backend.bussiness.repository.AccountRepository;
 import HotelBooking.backend.bussiness.repository.BookingTicketRepository;
@@ -34,14 +31,11 @@ import HotelBooking.backend.bussiness.repository.PlaceRepository;
 import HotelBooking.backend.bussiness.repository.PlaceTypeRepository;
 import HotelBooking.backend.bussiness.repository.RoomRepository;
 import HotelBooking.backend.bussiness.storageServices.CustomWindowStorage;
-import HotelBooking.backend.persistant.Account;
 import HotelBooking.backend.persistant.BookingTicket;
 import HotelBooking.backend.persistant.Category;
-import HotelBooking.backend.persistant.Comment;
 import HotelBooking.backend.persistant.Facility;
 import HotelBooking.backend.persistant.Hotel;
 import HotelBooking.backend.persistant.Image;
-import HotelBooking.backend.persistant.ManagerAccount;
 import HotelBooking.backend.persistant.PlaceComponent;
 import HotelBooking.backend.persistant.PlaceComponentKey;
 import HotelBooking.backend.persistant.PlaceType;
