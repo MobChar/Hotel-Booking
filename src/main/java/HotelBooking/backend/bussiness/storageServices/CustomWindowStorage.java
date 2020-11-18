@@ -36,10 +36,10 @@ public class CustomWindowStorage {
 	static {
 		generateId=0;
 		
-		resourcePath = System.getProperty("user.dir") + "\\src\\main\\resources";
-		imgPath = resourcePath + "\\images\\public";
+		resourcePath = System.getProperty("user.dir") + "/src/main/resources";
+		imgPath = resourcePath + "/images/public";
 		logger.warn(imgPath);
-		file = new File(resourcePath + "\\generateId.txt");
+		file = new File(resourcePath + "/generateId.txt");
 		
 		try {
 			if (!file.exists()) {
@@ -65,9 +65,8 @@ public class CustomWindowStorage {
 		String fileEx = fileName.split("\\.")[1];
 		fileName = (++generateId) + "." + fileEx;
 
-		File wFile = new File(imgPath + "\\" + fileName);
-		if (wFile.exists())
-			logger.warn("ACACAC");
+		File wFile = new File(imgPath + "/" + fileName);
+		
 
 		try (OutputStream os = new FileOutputStream(wFile)) {
 			os.write(file.getBytes());
