@@ -1,0 +1,22 @@
+spring:
+   datasource:
+      url: jdbc:sqlserver://hotel-booking.database.windows.net;databaseName=hotel-booking;useUnicode=yes;characterEncoding=UTF-8
+      username: mobchar26
+      password: B@nhbaiibu19
+      driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+   jpa:
+      hibernate:
+         ddl-auto: update
+      show-sql: true
+   mvc:
+      view: 
+         prefix: /WEB-INF/view/
+         suffix: .jsp
+   security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 624446983148-dt9u00dqet1144l0ljd0b4s3o8srf4ki.apps.googleusercontent.com
+            clientSecret: DaNQ1ClfOChE6zbqjTNvCpyv
+# ...
